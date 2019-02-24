@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CellViewController">
+            <connections>
+                <outlet property="carrierView" destination="khi-ee-Vqc" id="tP2-oa-T9u"/>
+                <outlet property="imageDimensions" destination="Ywt-rh-jrf" id="ahA-le-yFz"/>
+                <outlet property="imageKind" destination="8ba-oZ-3Yo" id="hin-wK-5zt"/>
+                <outlet property="imageTitle" destination="2Uh-f6-wgW" id="1Gz-Wh-7hc"/>
+                <outlet property="imageView" destination="oVr-5j-0aq" id="wY6-aR-cZE"/>
+                <outlet property="view" destination="khi-ee-Vqc" id="tLd-ey-WDB"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="khi-ee-Vqc" userLabel="View" customClass="LHSlideCarrierView">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" id="Ywt-rh-jrf">
+                    <rect key="frame" x="15" y="10" width="110" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Dimensions" id="IjS-oG-cgT">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView alphaValue="0.80000000000000004" id="oVr-5j-0aq" customClass="LHSlideImageView">
+                    <rect key="frame" x="30" y="40" width="80" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="Wek-rf-6Rq"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="2Uh-f6-wgW">
+                    <rect key="frame" x="15" y="116" width="110" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Title" id="5AJ-fq-KEt">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" red="0.08235294118" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="8ba-oZ-3Yo">
+                    <rect key="frame" x="15" y="25" width="110" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Kind" id="6fh-jQ-QsL">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="-462" y="276"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TSImageBrowser">
+            <connections>
+                <outlet property="indexText" destination="YU6-Gg-yiH" id="vbe-X1-Ege"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="ImageBrowserView">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m2i-cc-Dk4">
+                    <rect key="frame" x="136" y="13" width="88" height="32"/>
+                    <buttonCell key="cell" type="push" title="Preview" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3gS-nm-fMb">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="preViewImage:" target="-2" id="Dib-Gj-84J"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gnb-RT-Mqi">
+                    <rect key="frame" x="266" y="13" width="69" height="32"/>
+                    <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3dC-Js-ulf">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="nextImage:" target="-2" id="2qZ-4Z-duN"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YU6-Gg-yiH">
+                    <rect key="frame" x="209" y="228" width="63" height="24"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="0/100" id="QEU-vE-hpo">
+                        <font key="font" metaFont="systemBold" size="20"/>
+                        <color key="textColor" name="customControlColor"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gnb-RT-Mqi" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" constant="60" id="0bk-Sf-4sA"/>
+                <constraint firstAttribute="bottom" secondItem="m2i-cc-Dk4" secondAttribute="bottom" constant="20" id="HSn-8a-9hk"/>
+                <constraint firstItem="YU6-Gg-yiH" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="JDT-WA-PBv"/>
+                <constraint firstAttribute="bottom" secondItem="gnb-RT-Mqi" secondAttribute="bottom" constant="20" id="RDj-7d-k9O"/>
+                <constraint firstItem="YU6-Gg-yiH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="vZt-pX-tBa"/>
+                <constraint firstItem="m2i-cc-Dk4" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" constant="-60" id="yNo-PO-2f7"/>
+            </constraints>
+            <point key="canvasLocation" x="96" y="101"/>
+        </customView>
+    </objects>
+    <resources>
+        <namedColor name="customControlColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
